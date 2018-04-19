@@ -20,8 +20,9 @@ public class HelloworldApplication {
 	public class FileUploadController {
 
 		@RequestMapping("/test")
-		void test(HttpServletRequest request){
+		String test(HttpServletRequest request){
 			System.out.println(request.getRemoteAddr());
+			return request.getRemoteAddr();
 		}
 
 	}
