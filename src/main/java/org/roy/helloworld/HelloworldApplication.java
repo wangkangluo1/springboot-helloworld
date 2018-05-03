@@ -21,7 +21,7 @@ public class HelloworldApplication {
 
 		@RequestMapping("/test")
 		String test(HttpServletRequest request){
-			System.out.println(request.getRemoteAddr());
+			//System.out.println(request.getRemoteAddr());
 			return request.getRemoteAddr();
 		}
 
